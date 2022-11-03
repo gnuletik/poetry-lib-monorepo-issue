@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "test-poetry"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+package1 = { git = "git@github.com:gnuletik/poetry-multipackages-example.git", subdirectory = "package1", branch = "feat/test" }
+package2 = { git = "git@github.com:gnuletik/poetry-multipackages-example.git", subdirectory = "package2", branch = "feat/test" }
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
